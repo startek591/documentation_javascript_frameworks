@@ -7,5 +7,6 @@ import { Component } from '@angular/core';
     <h1>User profile</h1>
     <p>This is the user profile page</p>
   `,
+  styles: `h1 { font-size: 3em; }`,
 })
 export class UserProfile {}
