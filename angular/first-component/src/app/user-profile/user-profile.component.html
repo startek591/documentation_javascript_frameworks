@@ -1,3 +1,21 @@
 <div><profile-photo /></div>
-<h1>User profile</h1>
+<h1>Profile for {{ userName() }}</h1>
 <p>This is the user profile page</p>
+
+<button [disabled]="!isValidUserId()">Save changes</button>
+
+<button (click)="cancelSubscription($event)">Cancel subscription</button>
+
+<h1>User profile</h1>
+
+@if (isAdmin()) {
+<h2>Admin settings</h2>
+} @else {
+<h2>User settings</h2>
+}
+
+<ul class="user-badge-list">
+  @for (badge of badges(); track badge.id) {
+  <li class="user-badge">{{ badge.name }}</li>
+  }
+</ul>
