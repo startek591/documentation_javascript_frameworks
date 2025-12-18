@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="scopeInheritance">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scope Inheritance Example</title>
+    <link href="app.css" />
+  </head>
+  <body>
+    <div class="spicy">
+      <div ng-controller="MainController">
+        <p>Good {{timeOfDay}}, {{name}}!</p>
+
+        <div ng-controller="ChildController">
+          <p>Good {{timeOfDay}}, {{name}}!</p>
+
+          <div ng-controller="GrandChildController">
+            <p>Good {{timeOfDay}}, {{name}}!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.6/angular.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
