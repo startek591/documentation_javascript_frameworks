@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="eventExampleApp">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>$event</title>
+  </head>
+  <body>
+    <div ng-controller="EventController">
+      <button ng-click="clickMe($event)">Event</button>
+      <p><code>$event</code>: <pre>{{$event | json}}</pre></p>
+      <p><code>clickEvent</code>: <pre>{{clickEvent | json}}</pre></p>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.6/angular.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
