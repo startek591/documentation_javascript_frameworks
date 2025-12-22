@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myStatefulFilterApp">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stateful filters</title>
+  </head>
+  <body>
+    <div ng-controller="MyController">
+      Input: <input ng-model="greeting" type="text" /><br />
+      Decoration: <input ng-model="decoration.symbol" type="text" /><br />
+      No filter: {{greeting}}<br />
+      Decorated: {{greeting | decorate}}<br />
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.0/angular.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
