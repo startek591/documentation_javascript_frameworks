@@ -1,19 +1,14 @@
 (function () {
   angular
-    .module("docsTemplateUrlDirective", [])
-    .controller("NaomiController", [
+    .module("docsIsolateScopeDirective", [])
+    .controller("Controller", [
       "$scope",
       function ($scope) {
-        $scope.customer = {
+        $scope.naomi = {
           name: "Naomi",
           address: "1600 Amphitheatre",
         };
-      },
-    ])
-    .controller("IgorController", [
-      "$scope",
-      function ($scope) {
-        $scope.customer = {
+        $scope.igor = {
           name: "Igor",
           address: "123 Somewhere",
         };
@@ -22,6 +17,9 @@
     .directive("myCustomer", function () {
       return {
         restrict: "E",
+        scope: {
+          customerInfo: "=info",
+        },
         templateUrl: "my-customer.html",
       };
     });
