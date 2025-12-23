@@ -12,7 +12,9 @@
     ])
     .directive("myCustomer", function () {
       return {
-        templateUrl: "my-customer.html",
+        templateUrl: function (elem, attr) {
+          return "customer-" + attr.type + ".html";
+        },
       };
     });
 })();
