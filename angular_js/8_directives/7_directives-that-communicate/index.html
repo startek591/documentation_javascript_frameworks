@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="docsTabsExample">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Creating Directives that Communicate</title>
+  </head>
+  <body>
+    <my-tabs>
+      <my-pane title="Hello">
+        <p>Lorem ipsum dolor sit amet</p>
+      </my-pane>
+      <my-pane title="World">
+        <em>Mauris elementum enim at suscipit</em>
+        <p><a href ng-click="i = i + 1">counter: {{i || 0}}</a></p>
+      </my-pane>
+    </my-tabs>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.0/angular.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
