@@ -7,7 +7,10 @@
   </head>
   <body>
     <div ng-controller="Controller">
-      <my-dialog>Check out the contents, {{name}}!</my-dialog>
+      {{message}}
+      <my-dialog ng-hide="dialogIsHidden" on-close="hideDialog(message)"
+        >Check out the contents, {{name}}!</my-dialog
+      >
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.0/angular.js"></script>
     <script src="./script.js"></script>

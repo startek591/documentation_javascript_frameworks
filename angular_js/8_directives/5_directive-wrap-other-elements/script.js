@@ -3,19 +3,28 @@
     .module("docsTransclusionDirective", [])
     .controller("Controller", [
       "$scope",
-      function ($scope) {
+      "$timeout",
+      function ($scope, $timeout) {
         $scope.name = "Tobias";
+        $scope.message = "";
+        $scope.hideDialog = function (message) {
+          $scope.message = message;
+          $scope.dialogIsHidden = true;
+          $timeout(function () {
+            $scope.message = "";
+            $scope.dialogIsHidden = true;
+          }, 2000);
+        };
       },
     ])
     .directive("myDialog", function () {
       return {
         restrict: "E",
         transclude: true,
-        scope: {},
-        templateUrl: "my-dialog.html",
-        link: function (scope) {
-          scope.name = "Jeff";
+        scope: {
+          close: "&onClose",
         },
+        templateUrl: "my-dialog-close.html",
       };
     });
 })();
