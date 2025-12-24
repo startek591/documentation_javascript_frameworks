@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="heroApp">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Creating and configuring a Component</title>
+  </head>
+  <body>
+    <div ng-controller="MainCtrl as ctrl">
+      <b>Hero</b><br />
+      <hero-detail hero="ctrl.hero"></hero-detail>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.0/angular.js"></script>
+    <script src="./index.js"></script>
+    <script src="./heroDetail.js"></script>
+  </body>
+</html>
