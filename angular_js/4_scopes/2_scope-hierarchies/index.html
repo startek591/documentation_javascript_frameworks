@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="scopeExample">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scope Hierarchies</title>
+    <link href="./style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="show-scope-demo">
+      <div ng-controller="GreetingController">Hello {{name}}!</div>
+      <div ng-controller="ListController">
+        <ol>
+          <li ng-repeat="name in names">{{name}} from {{department}}</li>
+        </ol>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.6/angular.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>

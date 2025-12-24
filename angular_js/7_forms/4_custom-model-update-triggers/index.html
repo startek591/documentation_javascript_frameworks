@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="customTriggerExample">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Custom model update triggers</title>
+  </head>
+  <body>
+    <div ng-controller="ExampleController">
+      <form>
+        <label
+          >Name:
+          <input
+            type="text"
+            ng-model="user.name"
+            ng-model-options="{updateOn: 'blur'}"
+        /></label>
+        <br />
+        <label>
+          Other data:
+          <input type="text" ng-model="user.data" /> </label
+        ><br />
+      </form>
+      <pre>username = "{{user.name}}"</pre>
+      <pre>userdata = "{{user.data}}"</pre>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.0/angular.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
