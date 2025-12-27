@@ -1,6 +1,6 @@
-import Profile from "./1_component/Profile";
+import Gallery from "./1_component/Gallery";
 function App() {
-  return <Profile />;
+  return <Gallery />;
 }
 
 export default App;
