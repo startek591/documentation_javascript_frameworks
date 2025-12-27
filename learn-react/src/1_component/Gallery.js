@@ -12,3 +12,7 @@ export default function Gallery() {
     </section>
   );
 }
+
+// PitFall
+// -- Never nest their defintions (very slow and causes bugs)
+// -- Define very componet at the top level
