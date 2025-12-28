@@ -4,7 +4,8 @@
 // import Avatar from "./4_javascript_with_curly_braces/Avatar";
 // import TodoList from "./4_javascript_with_curly_braces/TodoList";
 // import Avatar from "./5_passing_props_to_components/Avatar";
-import Clock from "./5_passing_props_to_components/Clock";
+// import Clock from "./5_passing_props_to_components/Clock";
+import PackingList from "./6_conditional_rendering/PackingList";
 
 // function Card({ children }) {
 //   return <div className="card">{children}</div>;
@@ -35,7 +36,7 @@ function App() {
       {/* <hr /> */}
       {/* <TodoList /> */}
       {/* <Profile /> */}
-      <Clock />
+      <PackingList />
     </>
   );
 }
