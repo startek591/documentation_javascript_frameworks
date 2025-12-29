@@ -1,5 +1,14 @@
 function Button({ onClick, children }) {
-  return <button onClick={onClick}>{children}</button>;
+  return (
+    <button
+      onClick={(e) => {
+        e.stopPropagation();
+        onClick;
+      }}
+    >
+      {children}
+    </button>
+  );
 }
 function PlayButton({ movieName }) {
   function handlePlayClick() {
