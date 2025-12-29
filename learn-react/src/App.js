@@ -18,7 +18,8 @@
 // import BucketList from "./9_adding-interactivity/BucketList";
 // import Button from "./10_responding-to-events/Button";
 // import Toolbar from "./10_responding-to-events/Toolbar";
-import Signup from "./10_responding-to-events/Signup";
+// import Signup from "./10_responding-to-events/Signup";
+import Gallery from "./11_component-memory/Gallery";
 
 // function Card({ children }) {
 //   return <div className="card">{children}</div>;
@@ -71,7 +72,9 @@ function App() {
       {/* <BucketList /> */}
       {/* <Button /> */}
       {/* <Toolbar /> */}
-      <Signup />
+      {/* <Signup /> */}
+      <Gallery />
+      <Gallery />
     </>
   );
 }
