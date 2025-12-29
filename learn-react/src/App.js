@@ -16,7 +16,8 @@
 // import Counter from "./9_adding-interactivity/Counter";
 // import Form2 from "./9_adding-interactivity/Form2";
 // import BucketList from "./9_adding-interactivity/BucketList";
-import Button from "./10_responding-to-events/Button";
+// import Button from "./10_responding-to-events/Button";
+import Toolbar from "./10_responding-to-events/Toolbar";
 
 // function Card({ children }) {
 //   return <div className="card">{children}</div>;
@@ -67,7 +68,8 @@ function App() {
       {/* <Counter /> */}
       {/* <Form2 /> */}
       {/* <BucketList /> */}
-      <Button />
+      {/* <Button /> */}
+      <Toolbar />
     </>
   );
 }
