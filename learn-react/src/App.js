@@ -10,7 +10,8 @@
 // import { Recipe } from "./8_pure-components/Recipe";
 // import TeaSet from "./8_pure-components/TeaSet";
 // import TeaGathering from "./8_pure-components/TeaGathering";
-import { Toolbar } from "./9_adding-interactivity/Toolbar";
+// import { Toolbar } from "./9_adding-interactivity/Toolbar";
+import Gallery from "./9_adding-interactivity/Gallery";
 
 // function Card({ children }) {
 //   return <div className="card">{children}</div>;
@@ -52,10 +53,11 @@ function App() {
       </section>
       <TeaSet />
       <TeaGathering /> */}
-      <Toolbar
+      {/* <Toolbar
         onPlayMovie={() => alert("Playing!")}
         onUploadImage={() => alert("Uploading!")}
-      />
+      /> */}
+      <Gallery />
     </>
   );
 }
