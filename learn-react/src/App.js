@@ -14,7 +14,8 @@
 // import Gallery from "./9_adding-interactivity/Gallery";
 // import Form from "./9_adding-interactivity/Form";
 // import Counter from "./9_adding-interactivity/Counter";
-import Form2 from "./9_adding-interactivity/Form2";
+// import Form2 from "./9_adding-interactivity/Form2";
+import BucketList from "./9_adding-interactivity/BucketList";
 
 // function Card({ children }) {
 //   return <div className="card">{children}</div>;
@@ -63,7 +64,8 @@ function App() {
       {/* <Gallery />
       <Form /> */}
       {/* <Counter /> */}
-      <Form2 />
+      {/* <Form2 /> */}
+      <BucketList />
     </>
   );
 }
