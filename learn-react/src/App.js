@@ -7,9 +7,10 @@
 // import Clock from "./5_passing_props_to_components/Clock";
 // import PackingList from "./6_conditional_rendering/PackingList";
 // import List from "./7_rendering-lists/List";
-import { Recipe } from "./8_pure-components/Recipe";
-import TeaSet from "./8_pure-components/TeaSet";
-import TeaGathering from "./8_pure-components/TeaGathering";
+// import { Recipe } from "./8_pure-components/Recipe";
+// import TeaSet from "./8_pure-components/TeaSet";
+// import TeaGathering from "./8_pure-components/TeaGathering";
+import { Toolbar } from "./9_adding-interactivity/Toolbar";
 
 // function Card({ children }) {
 //   return <div className="card">{children}</div>;
@@ -42,7 +43,7 @@ function App() {
       {/* <Profile /> */}
       {/* <PackingList /> */}
       {/* <List /> */}
-      <section>
+      {/* <section>
         <h1>Spiced Chai Recipe</h1>
         <h2>For two</h2>
         <Recipe drinkers={2} />
@@ -50,7 +51,11 @@ function App() {
         <Recipe drinkers={4} />
       </section>
       <TeaSet />
-      <TeaGathering />
+      <TeaGathering /> */}
+      <Toolbar
+        onPlayMovie={() => alert("Playing!")}
+        onUploadImage={() => alert("Uploading!")}
+      />
     </>
   );
 }
