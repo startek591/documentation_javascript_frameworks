@@ -12,6 +12,7 @@
 // import TeaGathering from "./8_pure-components/TeaGathering";
 // import { Toolbar } from "./9_adding-interactivity/Toolbar";
 import Gallery from "./9_adding-interactivity/Gallery";
+import Form from "./9_adding-interactivity/Form";
 
 // function Card({ children }) {
 //   return <div className="card">{children}</div>;
@@ -58,6 +59,7 @@ function App() {
         onUploadImage={() => alert("Uploading!")}
       /> */}
       <Gallery />
+      <Form />
     </>
   );
 }
