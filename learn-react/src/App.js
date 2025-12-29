@@ -13,7 +13,8 @@
 // import { Toolbar } from "./9_adding-interactivity/Toolbar";
 // import Gallery from "./9_adding-interactivity/Gallery";
 // import Form from "./9_adding-interactivity/Form";
-import Counter from "./9_adding-interactivity/Counter";
+// import Counter from "./9_adding-interactivity/Counter";
+import Form2 from "./9_adding-interactivity/Form2";
 
 // function Card({ children }) {
 //   return <div className="card">{children}</div>;
@@ -61,7 +62,8 @@ function App() {
       /> */}
       {/* <Gallery />
       <Form /> */}
-      <Counter />
+      {/* <Counter /> */}
+      <Form2 />
     </>
   );
 }
