@@ -8,6 +8,7 @@
 // import PackingList from "./6_conditional_rendering/PackingList";
 // import List from "./7_rendering-lists/List";
 import { Recipe } from "./8_pure-components/Recipe";
+import TeaSet from "./8_pure-components/TeaSet";
 
 // function Card({ children }) {
 //   return <div className="card">{children}</div>;
@@ -47,6 +48,7 @@ function App() {
         <h2>For a gathering</h2>
         <Recipe drinkers={4} />
       </section>
+      <TeaSet />
     </>
   );
 }
