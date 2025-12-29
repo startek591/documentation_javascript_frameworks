@@ -11,8 +11,9 @@
 // import TeaSet from "./8_pure-components/TeaSet";
 // import TeaGathering from "./8_pure-components/TeaGathering";
 // import { Toolbar } from "./9_adding-interactivity/Toolbar";
-import Gallery from "./9_adding-interactivity/Gallery";
-import Form from "./9_adding-interactivity/Form";
+// import Gallery from "./9_adding-interactivity/Gallery";
+// import Form from "./9_adding-interactivity/Form";
+import Counter from "./9_adding-interactivity/Counter";
 
 // function Card({ children }) {
 //   return <div className="card">{children}</div>;
@@ -58,8 +59,9 @@ function App() {
         onPlayMovie={() => alert("Playing!")}
         onUploadImage={() => alert("Uploading!")}
       /> */}
-      <Gallery />
-      <Form />
+      {/* <Gallery />
+      <Form /> */}
+      <Counter />
     </>
   );
 }
