@@ -1,12 +1,16 @@
-const people = [
-  "Creola Katherine Johnson: mathematician",
-  "Mario José Molina-Pasquel Henríquez: chemist",
-  "Mohammed Abdus Salam: physicist",
-  "Percey Lavon Juilian: chemist",
-  "Subrahmanyan Chandrasekhar: astrophysicist",
-];
+import { people } from "./data";
+import { getImageUrl } from "./utils";
 
 export default function List() {
-  const listItems = people.map((person) => <li>{person}</li>);
+  const listItems = people.map((person) => (
+    <li key={person.id}>
+      <img src={getImageUrl(person)} alt={person.name} />
+      <p>
+        <b>{person.name}</b>
+        {" " + person.profession + " "}
+        known for {person.accomplishment}
+      </p>
+    </li>
+  ));
   return <ul>{listItems}</ul>;
 }
